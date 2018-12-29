@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietSach";
+    Layout = "~/Views/_LayoutTrangChu.cshtml";
+}
+@using OnlineBooks.Models;
+@model Sach
+<div class="Product-info">
+    <div class="info-left">
+        <img src="~/Content/Images/product/@Model.AnhBia" />
+    </div>
+    <div class="info-right">
+        <h1>@Model.TenSach</h1>
+        <div class="Description">
+            <h3>Tên Tác Giả:</h3>      @ViewBag.TenTG
+            <br />
+            <h3>Nhà Xuất Bản:</h3>@Model.NhaXuatBan.TenNXB
+        </div>
+        <div class="Product-Price">
+           <h3>Giá bán:</h3> <span>@string.Format("{0:0,0}", Model.GiaBan) VND</span>
+        </div>
+        <div class="Cart">
+            <h3>Số Lượng:</h3>
+            <div id="SL">
+                <button class="btn-Tru" onclick="Tru()">-</button>
+                <input type="text" id="txtSL" value="1" />
+                <button class="btn-Cong" onclick="Cong()" >+</button>
+            </div>
+            <input type="button" id="btn-Cart" value="Thêm Vào Giỏ Hàng" onclick="DatHang(@Model.MaSach)" />
+        </div>
+        <div class="review">
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <span>0 Đánh Giá</span>
+            <i>|</i>
+            <span><a href="#frmRating">Viết Đánh Giá</a></span>
+        </div>
+    </div>
+
+</div>
+<div class="Tab">
+    <a id="Tab-R">Đánh Giá</a>
+    <a id="Tab-L">Mô Tả</a>
+    
+</div>
+<div class="Tab-Description">
+    <h2>@Model.TenSach</h2>
+    <p>@Model.MoTa</p>
+</div>
+<div class="Tab-Review" id="idReview">
+    <div>
+        <div style="display:none" class="new-Cmt">
+            <div class="review-list">
+                <div class="author">
+                    <b></b>
+                    Bình Luận Ngày: <span></span>
+                </div>
+                <div class="rating-review">
+                </div>
+                <div class="text-review">
+
+                </div>
+            </div>
+        </div>
+        @foreach (var dg in (IList<DanhGia>)ViewData["listDG"])
+            {
+            <div class="review-list">
+                <div class="author">
+                    <b>@dg.TenKhachHang</b>
+                    Bình Luận Ngày: <span>@string.Format("{0:dd/MM/yyyy}", dg.NgayCmt)</span> 
+                </div>
+                <div class="rating-review">
+                    @if (dg.DiemDG == 1)
+                        {
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        }
+                        else if (dg.DiemDG == 2)
+                        {
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        }
+                        else if (dg.DiemDG == 3)
+                        {
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        }
+                        else if (dg.DiemDG == 4)
+                        {
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i>
+                        }
+                        else if (dg.DiemDG == 5)
+                        {
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        <i class="fa fa-star star" aria-hidden="true"></i>
+                        }
+                </div>
+                <div class="text-review">
+                    @dg.cmtDanhGia
+                </div>
+            </div>
+        }
+    </div>
+    <h2>Viết Đánh Giá</h2>
+    <form  class="frm-Rating" id="frmRating">
+        <input type="text" id="MaSach" name="MaSach" value="@Model.MaSach" />
+        <input type="text" id="Ngay" name="Ngay" value="@DateTime.Now.ToString()" />
+        <b>Tên Của Bạn:</b>
+        <br />
+        <input type="text" name="Name" id="txt-frmRating" />
+        <br />
+        <p>Bình luận Của Bạn:</p>
+        <textarea name="Comment" id="erea-frmRating"></textarea>
+        <br />
+        <b>Đánh Giá:</b>
+        <input type="radio" name="Rating" value="1" onclick="Star(1)" />
+        <input type="radio" name="Rating" value="2" onclick="Star(2)"/>
+        <input type="radio" name="Rating" value="3" onclick="Star(3)"/>
+        <input type="radio" name="Rating" value="4" onclick="Star(4)"/>
+        <input type="radio" name="Rating" value="5" onclick="Star(5)"/>
+        <div class="btn-frmRating">
+            <div>
+               <input type="button" value="Đăng" class="btn-Rating" id="subRating"/>    
+            </div>
+        </div>
+    </form>
+</div>
+            
+

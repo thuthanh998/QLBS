@@ -1,0 +1,9 @@
+﻿@using OnlineBooks.Models;
+@model List<NhaXuatBan>
+@foreach (var item in Model)
+{
+    <ul>
+        <li><a href="#"><span class="fa fa-chevron-right"></span>@item.TenNXB</a></li>
+    </ul>
+}
+

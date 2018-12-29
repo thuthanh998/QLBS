@@ -1,0 +1,57 @@
+﻿.Cart-info table{
+    width: 100%;
+    border-collapse: collapse;
+    padding-bottom: 15px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.Cart-info thead td{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    background: #eee;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd
+}
+.Cart-info tbody td{
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+.Cart-info tbody img{
+    width: 80px;
+    height: 100px
+}
+.txtSLGH{
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+.Cart-info tbody td a{
+    font-size: 15px;
+    margin: 10px 0 10px 10px;
+    color: #333;
+    cursor: pointer
+}
+.Cart-info tbody td a:hover{
+    color:#f89406;
+}
+.TongTien{
+    display: block;
+    text-align: right;
+}
+.TongTien > h2{
+    padding: 15px;
+    display: inline-block;
+    background: #eee;
+    margin-bottom: 25px
+}
+.TongTien > h2 > span{
+  font-size: 15px;
+    font-weight: bolder;
+    color: #f89406;
+}

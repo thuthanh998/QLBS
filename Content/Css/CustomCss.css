@@ -1,0 +1,518 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+body {
+    background: #f8f8fa url('../Images/10.png') left repeat;
+    margin: 0;
+    font-size: 12px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-main {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 20px auto 0 auto;
+    background: #fff;
+}
+
+.container {
+    text-align: left;
+    width: 100%;
+    min-height: 500px;
+}
+
+header {
+    min-height: 135px;
+    position: relative;
+    padding: 10px 0;
+}
+
+#Welcome {
+    float: right;
+}
+
+    #Welcome > a {
+        float: left;
+        color: #666;
+        text-decoration: none;
+        margin: 5px 10px 5px 5px;
+    }
+
+        #Welcome > a:hover {
+            color: #f89406;
+        }
+
+#Logo {
+    width: 300px;
+    height: 120px;
+    float: left;
+    margin: 0px 35px 0 0;
+}
+
+    #Logo img {
+        width: 300px;
+        height: 110px;
+    }
+
+#Search {
+    margin-top: 45px;
+    float: left;
+    position: relative;
+}
+
+#txt-Search {
+    height: 32px;
+    width: 350px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+}
+
+    #txt-Search:focus {
+        box-shadow: -3px 5px 10px 0px #333;
+    }
+
+#btn-Search {
+    position: absolute;
+    right: 0;
+    background: url(../Images/btnSearch.PNG) no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 34px;
+    float: left;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#cart {
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    bottom: 0;
+}
+
+    #cart > a {
+        text-decoration: none;
+        color: #444;
+    }
+
+        #cart > a > h4 {
+            color: #f89406;
+            font-size: 30px;
+        }
+
+#menu {
+    background: #444;
+    height: 40px;
+    padding: 0px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+    #menu > ul {
+        list-style: none;
+    }
+
+        #menu > ul > li > a {
+            float: left;
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+            padding: 12px 25px;
+        }
+
+            #menu > ul > li > a:hover {
+                background: #f89406;
+            }
+
+    #menu > h4 {
+        display: none;
+        font-size: 40px;
+        color: #fff;
+        float: left;
+        margin-left: 15px;
+    }
+
+    #menu > span {
+        display: none;
+        font-size: 40px;
+        color: #fff;
+        float: right;
+        margin-right: 15px;
+    }
+
+#menu-responsive {
+    display: none;
+    background: #fff;
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    z-index: 999;
+    border: 1px solid;
+    box-shadow: -5px 7px 10px 0px #999;
+}
+
+@keyframes menu-respon {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+#menu-responsive > ul {
+    list-style: none;
+}
+
+    #menu-responsive > ul > li {
+        margin-bottom: 5px;
+    }
+
+        #menu-responsive > ul > li > span {
+            font-size: 15px;
+            background: #eee;
+            display: -webkit-box;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+            #menu-responsive > ul > li > span > a {
+                text-decoration: none;
+                color: #333;
+            }
+
+        #menu-responsive > ul > li ul {
+            list-style: none;
+            margin-left: 40px;
+        }
+
+            #menu-responsive > ul > li ul > li {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            #menu-responsive > ul > li ul a {
+                color: #333;
+                text-decoration: none;
+            }
+
+#menu-plus > div {
+    display: none;
+}
+
+#menu-plus2 > div {
+    display: none;
+}
+
+.col-left {
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+    border-right: 1px solid #eee;
+}
+
+.content {
+    margin-left: 250px;
+    width: 79%;
+    min-height: 500px;
+    padding-right: 1%;
+}
+
+#menu2-heading {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.menu2 > #menu2-heading > span {
+    line-height: 30px;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #f89406;
+    display: inline-block;
+    padding-right: 45px;
+}
+
+.menu2 > ul {
+    list-style: none;
+}
+
+    .menu2 > ul > li {
+        border-bottom: 1px solid #eee;
+    }
+
+        .menu2 > ul > li > a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding: 5px 8px;
+            display: block;
+        }
+
+            .menu2 > ul > li > a:hover {
+                color: #f89406;
+            }
+
+footer {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 3px auto 20px auto;
+    min-height: 200px;
+    overflow: auto;
+    background: #333;
+    border-radius: 5px 5px 15px 15px;
+}
+
+.collum {
+    float: left;
+    width: 20%;
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+}
+
+    .collum > a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .collum > a > p {
+            margin: 10px 20px;
+        }
+
+.contact {
+    float: left;
+    width: 29%;
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+}
+
+    .contact > p {
+        color: #eee;
+    }
+/*Css Trang chu*/
+.mySlide {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+    padding-left: 5%;
+}
+
+    .mySlide > div {
+        position: relative;
+        z-index: 10;
+    }
+
+.SlidesImg {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+#btn-L {
+    z-index: 10;
+    position: absolute;
+    top: 45%;
+    font-size: 50px;
+    display: none;
+    opacity: 0.2;
+}
+
+#btn-R {
+    z-index: 10;
+    position: absolute;
+    right: 0%;
+    top: 45%;
+    display: none;
+    font-size: 50px;
+    opacity: 0.2;
+}
+
+.box-heading {
+    font-size: 20px;
+    padding: 0px 20px 0px 0px;
+    border-bottom: solid 1px #aaa;
+}
+
+    .box-heading > span {
+        border-bottom: 2px solid #f89406;
+        padding: 0 75px 0 0;
+    }
+
+.box-product {
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+}
+
+    .box-product > div {
+        width: 160px;
+        min-height: 200px;
+        display: inline-block;
+        margin: 15px 20px 15px 0;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+
+        .box-product > div:hover {
+            border: 1px solid #eee;
+            box-shadow: 5px 5px 15px -5px #f89406;
+        }
+
+.Images {
+    display: block;
+}
+
+    .Images > img {
+        width: 135px;
+        height: 180px;
+    }
+
+.Name {
+    width: 100%;
+    min-height: 30px;
+    color:#000;
+}
+
+.price {
+    margin: 5px 0;
+    color: #f89406;
+    font-weight: 900;
+}
+
+.btn-cart {
+    margin: 5px 0;
+}
+
+    .btn-cart > input {
+        padding: 5px 5px;
+        color: #555;
+        font-size: 14px;
+        background: #eee;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+        .btn-cart > input:hover {
+            background: #f89406;
+            color: #eee;
+        }
+
+        .btn-cart > input:focus {
+            outline: none;
+        }
+
+@media (max-width:1025px) {
+    .container {
+        width: auto;
+    }
+
+    #menu-responsive {
+        display: none;
+    }
+
+    #menu > ul {
+        display: none;
+    }
+
+    #menu > span {
+        display: block;
+    }
+
+    #menu > h4 {
+        display: block;
+    }
+
+    .col-left {
+        display: none !important;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    header {
+        text-align: -webkit-center;
+        min-height: 250px;
+    }
+
+    #txt-Search {
+        height: 32px;
+        width: 100%;
+        background: #fff;
+        color: #333;
+        border: 1px solid #e4e4e4;
+        border-right: 0;
+        border-radius: 5px;
+        padding-left: 0;
+    }
+
+    #Search {
+        float: none;
+        width: 100%;
+    }
+
+    #Logo {
+        width: 300px;
+        height: 120px;
+        float: none;
+        margin: 0px 35px 0 0;
+    }
+
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .collum {
+        width: 25%;
+    }
+
+    .contact {
+        width: 98%;
+    }
+    /*Respon Trang Chu*/
+    .box-heading {
+        text-align: center;
+    }
+
+        .box-heading > span {
+            padding: 0 20px;
+        }
+}
+
+@media (max-width:768px) {
+    footer {
+        text-align: center;
+    }
+
+    .collum {
+        width: 95%;
+        border-bottom: 1px solid;
+        cursor: pointer;
+    }
+
+        .collum > a {
+            color: #fff;
+            text-decoration: none;
+            display: none;
+        }
+}

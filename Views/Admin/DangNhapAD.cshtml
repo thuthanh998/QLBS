@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Css/CssTrangAdmin.css" rel="stylesheet" />
+</head>
+<body style="width: 100%; height: auto;text-align: center;">
+    <div>
+        <img src="~/Content/Images/BookOnline.PNG" />
+    </div>
+
+    <form id="frm-DNadmin" action="/Admin/DangNhapAd" method="post">
+        <div>
+            <h2>Đăng Nhập Admin</h2>
+            <input type="text" name="TaiKhoanAD" placeholder="Tài Khoản" />
+            <br />
+            <input type="password" name="MatKhau" placeholder="MatKhau" />
+            <br />
+            <p>@ViewBag.Tb</p>
+            <input type="submit" id="sub-DNAd" value="Đăng Nhập" />
+        </div>
+
+    </form>
+</body>
+</html>

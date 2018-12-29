@@ -1,0 +1,248 @@
+﻿.Product-info {
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.info-left {
+    float: left;
+}
+
+    .info-left > img {
+        width: 350px;
+        height: 350px;
+    }
+
+.info-right {
+    margin-left: 370px;
+}
+
+    .info-right > h1 {
+        font-weight: bold;
+        font-family: Trebuchet MS;
+        margin-bottom: 10px;
+    }
+
+.Description {
+    border-top: 1px dashed #e2e2e2;
+    border-bottom: 1px dashed #e2e2e2;
+    padding: 10px;
+    font-size: 15px;
+}
+
+    .Description > h3 {
+        display: inline-block;
+        color: #f89406;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+        .Description > h3 + h3 {
+            display: block;
+            color: #f89406;
+            font-size: 20px;
+        }
+
+.Product-Price {
+    border-bottom: 1px dashed #e2e2e2;
+}
+
+    .Product-Price > h3 {
+        display: inline-block;
+        color: #f89406;
+        font-size: 20px;
+        padding: 20px 15px 20px 10px;
+    }
+
+    .Product-Price > span {
+        background: #f89406 url(../Images/price-tag.png) no-repeat top left;
+        background-size: 19px;
+        padding: 10px 10px 10px 40px;
+        border: 0px;
+        font-size: 20px;
+        display: inline-block;
+        color: #fff;
+    }
+
+.Cart {
+    border-bottom: 1px dashed #e2e2e2;
+}
+
+    .Cart > h3 {
+        display: inline-block;
+        color: #f89406;
+        font-size: 20px;
+        padding: 20px 15px 20px 10px;
+    }
+
+#SL {
+    display: inline-block;
+}
+
+#txtSL {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #f89406;
+}
+
+.btn-Tru {
+    border: 1px solid #ccc;
+    background: #fff;
+    opacity: 0.4;
+    padding: 0 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-Cong {
+    border: 1px solid #ccc;
+    background: #fff;
+    opacity: 0.4;
+    padding: 0 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-Cart {
+    width: 160px;
+    height: 35px;
+    background: #f89406;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    #btn-Cart:hover {
+        background: #7e6035;
+    }
+
+.review {
+    padding: 10px;
+    background-color: #eee;
+    margin-top: 10px;
+}
+
+    .review > span {
+        margin: 10px;
+    }
+
+.Tab {
+    padding: 10px 10px 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+    .Tab a {
+        padding: 10px 30px;
+        background: #eee;
+        border-top: 1px solid #E4E8F1;
+        color: #333;
+        border-left: 1px solid #E4E8F1;
+        border-right: 1px solid #E4E8F1;
+    }
+
+.Tab-Description {
+    text-align: center;
+    display:none;
+    font-size: 14px;
+    border-left: 1px solid #E4E8F1;
+    border-right: 1px solid #E4E8F1;
+    border-bottom: 1px solid #E4E8F1;
+}
+    .Tab-Description > h2 {
+        color: #f89406;
+        padding: 30px;
+    }
+    .Tab-Description > p {
+        text-align: left;
+        padding: 30px;
+    }
+#Tab-R{
+    background-color:#fff;
+    padding-bottom:13px;
+}
+.Tab-Review{
+    
+    padding:10px;
+    font-size: 14px;
+    border-left: 1px solid #E4E8F1;
+    border-right: 1px solid #E4E8F1;
+    border-bottom: 1px solid #E4E8F1;
+}
+.review-list{
+    padding: 10px;
+    overflow: auto;
+    margin-bottom: 10px;
+    border: 1px solid #E4E8F1;
+}
+.author{
+    float:left;
+    margin-bottom:10px;
+}
+.rating-review{
+    float:right;
+}
+.rating-review > i{
+    color:#eee;
+}
+.text-review{
+    clear:both;
+    padding-left:20px;
+}
+#txt-rating{
+    display:none;
+}
+.star{
+    color:#e9900b!important;
+}
+.Tab-Review > h2{
+    background-color: #333;
+    padding: 10px;
+    font-family: auto;
+    color: #eee;
+}
+.frm-Rating{
+        margin-top: 20px;
+}
+#txt-frmRating{
+    background: #eee;
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 25px;
+}
+#erea-frmRating{
+    width: 70%;
+    height: 100px;
+    background: #eee;
+    border: 1px solid #ddd;
+    margin-bottom:15px;
+}
+.btn-frmRating{
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    margin-top:10px;
+}
+.btn-frmRating > div {
+    text-align:right;
+
+}
+.btn-Rating{
+    background: #f89406;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 5px;
+}
+#MaSach{
+    display:none;
+}
+#Ngay{
+    display:none;
+}

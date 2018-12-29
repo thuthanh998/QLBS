@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "ThemSach";
+    Layout = "~/Views/_LayoutTrangAd.cshtml";
+}
+<div style="text-align: center;font-size: 18px;    background: #eee;"><i class="fa fa-plus-square" aria-hidden="true"></i> Sách Mới</div>
+<form action="/Admin/ThemSach" method="post" enctype="multipart/form-data">
+    <div class="frm-ThemSach">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Tên Sách:</td>
+                    <td><input type="text" name="TenSach" id="TenSach" /></td>
+                </tr>
+                <tr>
+                    <td>Giá Bán:</td>
+                    <td><input type="text" name="Giaban" id="GiaBan" /></td>
+                </tr>
+                <tr>
+                    <td>Mô Tả:</td>
+                    <td><input type="text" name="MoTa" id="MoTa" /></td>
+                </tr>
+                <tr>
+                    <td>Ảnh Bìa:</td>
+                    <td><input style="background: none;border: 0;" type="file" name="AnhBia" id="AnhBia" value="Chọn Đường Dẫn Ảnh" /></td>
+                </tr>
+                <tr>
+                    <td>Ngày Cập Nhật:</td>
+                    <td><input type="text" name="NgayCapNhat" id="NgayCapNhat" /></td>
+                </tr>
+                <tr>
+                    <td>Số Lượng:</td>
+                    <td><input type="text" name="SoLuong" id="SoLuong" /></td>
+                </tr>
+                <tr>
+                    <td>Mã Nhà Xuất Bản:</td>
+                    <td><input type="text" name="MaNXB" id="MaNXB" /></td>
+                </tr>
+                <tr>
+                    <td>Mã Chủ Đề:</td>
+                    <td><input type="text" name="MaCD" id="MaCD" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="btn-ThemSach">
+        <input id="sub-ThemSach" type="submit" value="Thêm" />
+    </div>
+</form>
+
+

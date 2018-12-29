@@ -1,0 +1,118 @@
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\ApplicationInsights.config
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\csc.exe
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\System.Collections.Immutable.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\System.Reflection.Metadata.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\vbc.exe
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\VBCSCompiler.exe
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\roslyn\VBCSCompiler.exe.config
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\OnlineBooks.dll.config
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\OnlineBooks.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\OnlineBooks.pdb
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.DependencyCollector.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.Web.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.WindowsServer.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.ApplicationInsights.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.Web.Infrastructure.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Helpers.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Mvc.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Razor.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Deployment.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Razor.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.DependencyCollector.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.Web.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.AI.WindowsServer.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.ApplicationInsights.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Razor.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Deployment.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Razor.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Helpers.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\System.Web.Mvc.xml
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\obj\Debug\OnlineBooks.csprojResolveAssemblyReference.cache
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\obj\Debug\OnlineBooks.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\obj\Debug\OnlineBooks.pdb
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\EntityFramework.dll
+D:\TaiLieuHocKyV\Laptrinhweb\OnlineBooks\OnlineBooks\bin\EntityFramework.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\ApplicationInsights.config
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\csc.exe
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\System.Collections.Immutable.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\System.Reflection.Metadata.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\vbc.exe
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\VBCSCompiler.exe
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\roslyn\VBCSCompiler.exe.config
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\OnlineBooks.dll.config
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\OnlineBooks.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\OnlineBooks.pdb
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\EntityFramework.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.DependencyCollector.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.Web.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.WindowsServer.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.ApplicationInsights.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.Web.Infrastructure.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Helpers.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Mvc.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Razor.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Deployment.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Razor.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\EntityFramework.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.DependencyCollector.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.Web.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.AI.WindowsServer.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.ApplicationInsights.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Razor.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Deployment.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Webpages.Razor.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Helpers.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\bin\System.Web.Mvc.xml
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\obj\Debug\OnlineBooks.csprojResolveAssemblyReference.cache
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\obj\Debug\OnlineBooks.dll
+D:\TaiLieuHocKyV\Laptrinhweb\Demo\OnlineBooks\OnlineBooks\obj\Debug\OnlineBooks.pdb
+C:\Users\Trinh Duc\Desktop\demo-git\demo-onlinebooks\obj\Debug\OnlineBooks.dll
+C:\Users\Trinh Duc\Desktop\demo-git\demo-onlinebooks\obj\Debug\OnlineBooks.pdb
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\obj\Debug\OnlineBooks.dll
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\obj\Debug\OnlineBooks.pdb
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\ApplicationInsights.config
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\OnlineBooks.dll.config
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\OnlineBooks.dll
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\OnlineBooks.pdb
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\EntityFramework.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\Microsoft.AI.Web.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\System.Web.Razor.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\System.Web.Webpages.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\System.Web.Webpages.Razor.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\System.Web.Helpers.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\bin\System.Web.Mvc.xml
+C:\Users\Windows 10 Version 2\Downloads\demo-onlinebooks-master\demo-onlinebooks-master\obj\Debug\OnlineBooks.csprojResolveAssemblyReference.cache

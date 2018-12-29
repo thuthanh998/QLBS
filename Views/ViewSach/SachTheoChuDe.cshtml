@@ -1,0 +1,42 @@
+﻿@using OnlineBooks.Models;
+@model List<Sach>
+@{
+    ViewBag.Title = "ViewTrangChu";
+    Layout = "~/Views/_LayoutTrangChu.cshtml";
+}
+<div class="mySlide">
+    <div>
+        <img class="SlidesImg" src="~/Content/Images/slide1.jpg" />
+        <img class="SlidesImg" src="~/Content/Images/slide3.jpg" />
+        <img class="SlidesImg" src="~/Content/Images/slide4.jpg" />
+        <button type="button" id="btn-L"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button type="button" id="btn-R"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+</div>
+<div class="box">
+    <div class="box-heading">
+        @foreach (var a in Model)
+        {
+            <span>@a.ChuDe.TenChuDe</span>
+            break;
+        }
+    </div>
+    <div class="box-content">
+        <div class="box-product">
+            @foreach (var item in Model)
+            {
+                <div>
+                    <a href="/ViewSach/ChiTietSach?MaSach=@item.MaSach">
+                        <div class="Images"><img src="~/Content/Images/product/@item.AnhBia" /></div>
+                        <div class="Name">@item.TenSach</div>
+                        <div class="price">@string.Format("{0:0,0}", item.GiaBan) VND</div>
+                    </a>
+                    <div class="btn-cart">
+                        <input type="button" value="Thêm Vào Giỏ Hàng" />
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@using OnlineBooks.Models
+@model IEnumerable<SanPhamGH>
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/_LayoutTrangChu.cshtml";
+}
+<div class="Cart-info">
+    <table>
+        <thead>
+            <tr>
+                <td>Hình Sản Phẩm</td>
+                <td>Tên Sản Phẩm</td>
+                <td>Số Lượng Sản Phẩm</td>
+                <td>Đơn Giá</td>
+                <td>Tổng Tiền</td>
+            </tr>
+        </thead>
+        <tbody>
+            @{double TongTien = 0; }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><a href="/ViewSach/ChiTietSach?MaSach=@item.MaSP"><img src="~/Content/Images/product/@item.AnhSP" /></a></td>
+                    <td>@item.TenSP</td>
+                    <td><input type="text" id="@item.MaSP" class="txtSLGH" value="@item.SoLuong" /><a class="fa fa-upload btn-Update" onclick="CapNhat(@item.MaSP)" aria-hidden="true"></a><a  class="fa fa-trash-o btn-Delete" aria-hidden="true" onclick="XoaSP(@item.MaSP)"></a></td>
+                    <td>@string.Format("{0:0,0}",item.GiaSP)</td>
+                    <td>@string.Format("{0:0,0}", item.TongTien)</td>
+                </tr>
+                TongTien += @item.GiaSP * @item.SoLuong;
+            }
+            
+        </tbody>
+    </table>
+</div>
+<div class="TongTien">
+    <h2>Tổng Cộng:<span> @TongTien</span>VND</h2>
+</div>
+

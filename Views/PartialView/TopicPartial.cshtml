@@ -1,0 +1,8 @@
+﻿@using OnlineBooks.Models;
+@model List<ChuDe>
+@foreach (var item in Model)
+{
+    <ul>
+        <li><a href="/ViewSach/SachTheoChuDe?MaCD=@item.MaChuDe"><span class="fa fa-chevron-right"></span>@item.TenChuDe</a></li>
+    </ul>
+}

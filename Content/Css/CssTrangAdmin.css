@@ -1,0 +1,113 @@
+﻿header{
+    border-bottom: 2px solid #ff5722;
+    margin-bottom: 30px;
+}
+.Ad-left{
+    width:20%;
+    float:left;
+}
+.Ad-left > h2{
+        text-align: center;
+    padding: 5px;
+    background: #ff5722;
+    color: #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Ad-left > div{
+            border: 1px solid #ff5722;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.Ad-left > div > ul{
+    padding: 10px;
+    list-style: none;
+}
+.Ad-left > div > ul > li{
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-left: 20px
+}
+.Ad-left > div > ul > li > a {
+    color:black;
+}
+.Ad-left > div > ul > li > a:hover{
+    color:#ff5722;
+}
+.Ad-Content > table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+.Ad-Content > table > thead{
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+.Ad-Content > table >thead tr{
+        background: #eee;
+    vertical-align: middle;
+    text-align: center;
+}
+.Ad-Content > table td{
+    padding-top:5px;
+}
+.Ad-Content > table td > a{
+    font-size:25px;
+}
+a{
+    color:black;
+}
+.frm-ThemSach  table{
+    width:100%;
+    padding:10px;
+    border: 1px solid #eee;
+}
+.frm-ThemSach  table td{
+        padding: 15px;
+    font-size: 14px;
+}
+.frm-ThemSach table td input{
+    width: 300px;
+    height: 25px;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+#btn-ThemSach{
+        text-align: right;
+    padding: 10px;
+    padding-bottom:50px;
+}
+#btn-ThemSach input{
+    font-size: 20px;
+    padding: 5px 16px;
+    border: 1px solid #f89406;
+    background: #f89406;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-ThemSach input:hover{
+    background: #FF5722;
+}
+/*Css Đăng Nhập Ad*/
+#frm-DNadmin{
+    display: inline-block;
+    padding: 10px 50px;
+    border: 1px solid #f89406;
+    border-radius: 10px;
+}
+#frm-DNadmin > div > input{
+        padding: 5px 20px;
+    margin-bottom: 20px;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+#sub-DNAd{
+        padding: 10px 25px;
+    border: 1px solid #f89406;
+    background: #f89406;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sub-DNAd :hover{
+    background:#F15A23;
+}

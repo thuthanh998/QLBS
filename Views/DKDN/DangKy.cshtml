@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/_LayoutTrangChu.cshtml";
+}
+
+<h1>Đăng Ký Tài Khoản</h1>
+<form action="/DKDN/DangKy" method="post">
+    <h2>Thông Tin cá Nhân</h2>
+    <div class="frm-content">
+        <table class="frm-Table">
+            <tbody>
+                <tr>
+                    <td>Họ Tên:</td>
+                    <td><input type="text" name="HoTen" id="HoTen" /></td>
+                </tr>
+                <tr>
+                    <td>Giới Tính:</td>
+                    <td>
+                        <select id="SL-GT" name="GioiTinh">
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="Email" id="Email" /></td>
+                </tr>
+                <tr>
+                    <td>Số Điện Thoại:</td>
+                    <td><input type="text" name="SDT" id="SDT" /></td>
+                </tr>
+                <tr>
+                    <td>Ngày Sinh</td>
+                    <td><input type="text" name="NgaySinh" id="NgaySinh" /></td>
+                </tr>
+                <tr>
+                    <td>Địa Chỉ</td>
+                    <td><input type="text" name="DiaChi" id="DiaChi" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Thông Tin Đăng Nhập</h2>
+    <div class="frm-content">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Tên Đăng Nhập:</td>
+                    <td><input type="text" name="TenDN" id="TenDN" /></td>
+                </tr>
+                <tr>
+                    <td>Mật Khẩu:</td>
+                    <td><input type="password" name="MatKhau" id="MatKhau" /></td>
+                </tr>
+                <tr>
+                    <td>Nhập Lại Mật Khẩu:</td>
+                    <td><input type="password" name="LaiMK" id="LaiMK" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="btn-DangKy">
+        <p id="ThongBao"></p>
+        <input id="sub-DangKy" type="submit" value="Đăng Ký"/>
+    </div>
+</form>

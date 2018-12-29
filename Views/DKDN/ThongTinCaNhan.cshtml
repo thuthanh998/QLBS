@@ -1,0 +1,112 @@
+﻿@using OnlineBooks.Models;
+@model KhachHang
+@{
+    ViewBag.Title = "ThongTinCaNhan";
+    Layout = "~/Views/_LayoutTrangChu.cshtml";
+}
+<div id="TT-Left">
+    <div>
+        <span class="fa fa-address-card-o" aria-hidden="true"></span>
+        <div>
+            <p>@Model.TaiKhoan</p>
+            <p>ID:@Model.MaKH</p>
+            <input type="text" id="LayMKH" value="@Model.MaKH" style="display:none" />
+        </div>
+    </div>
+    <div>
+        <input type="button" id="btn-DoiMK" value="Thay Đổi Mật Khẩu" />
+    </div>
+</div>
+<div id="TT-Right">
+    <table>
+        <tbody>
+            <tr>
+                <td>Họ Tên:</td>
+                <td><p id="TT-HT">@Model.HoTen</p></td>
+            </tr>
+            <tr>
+                <td>Giới Tính:</td>
+                <td><p id="TT-GT">@Model.GioiTinh</p></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><p id="TT-E">@Model.Email</p></td>
+            </tr>
+            <tr>
+                <td>Địa Chỉ:</td>
+                <td><p id="TT-DC">@Model.DiaChi</p></td>
+            </tr>
+            <tr>
+                <td>Số Điện Thoại:</td>
+                <td><p id="TT-DT">@Model.DienThoai</p></td>
+            </tr>
+            <tr>
+                <td>Ngay Sinh:</td>
+                <td><p id="TT-NS">@Model.NgaySinh</p></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn-TT">
+        <input type="button" id="btn-SuaTT" value="Sửa Thông Tin" />
+    </div>
+</div>
+<div id="TT-Right2">
+    <table>
+        <tbody>
+            <tr>
+                <td>Họ Tên:</td>
+                <td><input type="text" value="@Model.HoTen" id="HoTen" /></td>
+            </tr>
+            <tr>
+                <td>Giới Tính:</td>
+                <td>
+                    <select id="GioiTinh" name="GioiTinh" >
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" value="@Model.Email" id="Email" /></td>
+            </tr>
+            <tr>
+                <td>Địa Chỉ:</td>
+                <td><input type="text" value="@Model.DiaChi" id="DiaChi" /></td>
+            </tr>
+            <tr>
+                <td>Số Điện Thoại:</td>
+                <td><input type="text" value="@Model.DienThoai" id="SDT" /></td>
+            </tr>
+            <tr>
+                <td>Ngay Sinh:</td>
+                <td><input type="text" value="@Model.NgaySinh" id="NgaySinh" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn-TT">
+        <input type="button" id="btn-LuuTT" value="Lưu Thông Tin" />
+    </div>
+</div>
+@*Đổi Mật Khẩu*@
+<div id="TT-Right3">
+    <table>
+        <tbody>
+            <tr>
+                <td>Mật Khẩu Củ:</td>
+                <td><input type="text" value="" id="MKCu" /></td>
+            </tr>
+            <tr>
+                <td>Mật Khẩu Mới:</td>
+                <td><input type="text" value="" id="MKMoi" /></td>
+            </tr>
+            <tr>
+                <td>Nhập Lại Mật Khẩu Mới:</td>
+                <td><input type="text" value="" id="LaiMKMoi" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn-TT">
+        <input type="button" id="btn-LuuTT2" value="Lưu Mật Khẩu" />
+    </div>
+</div>

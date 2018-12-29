@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9FC825E-8DAD-4050-B1C2-5040C2CB30A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineBooks</RootNamespace>
+    <AssemblyName>OnlineBooks</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="NewConnection1-Deployment" Order="1">
+          <Destination Path="Data Source=QuanLyBanSachEntities1.mssql.somee.com%3bInitial Catalog=QuanLyBanSachEntities1%3bPersist Security Info=False%3bUser ID=trinhduc_SQLLogin_4%3bPassword=5pbqgas2vw%3bPacket Size=4096%3bWorkstation ID=QuanLyBanSachEntities1.mssql.somee.com" />
+          <Object Type="DbFullSql" Enabled="False">
+            <PreSource Path="Data Source=%28local%29%3bInitial Catalog=QuanLyBanSach%3bIntegrated Security=True%3bMultipleActiveResultSets=True%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\NewConnection1-Deployment_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+        <ObjectGroup Name="QuanLyBanSachEntities-Deployment" Order="2">
+          <Destination Path="" />
+          <Object Type="DbFullSql" Enabled="True">
+            <PreSource Path="Data Source=%28local%29%3bInitial Catalog=QuanLyBanSach%3bIntegrated Security=True%3bMultipleActiveResultSets=True%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\QuanLyBanSachEntities-Deployment_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.xml" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.Web.xml" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.xml" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\OnlineBooks.dll" />
+    <Content Include="bin\OnlineBooks.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="Content\Css\CssDKDN.css" />
+    <Content Include="Content\Css\CssTrangAdmin.css" />
+    <Content Include="Content\Css\CustomCss.css" />
+    <Content Include="Content\Css\GioHangCss.css" />
+    <Content Include="Content\Css\TrangChiTietCss.css" />
+    <Content Include="Content\Images\10.png" />
+    <Content Include="Content\Images\Admin.PNG" />
+    <Content Include="Content\Images\BookOnline.PNG" />
+    <Content Include="Content\Images\btnSearch.PNG" />
+    <Content Include="Content\Images\price-tag.png" />
+    <Content Include="Content\Images\product\-nha-quan-ly-4-0.jpg" />
+    <Content Include="Content\Images\product\0006.jpg" />
+    <Content Include="Content\Images\product\10VCHVS_.jpg" />
+    <Content Include="Content\Images\product\7VNR.jpg" />
+    <Content Include="Content\Images\product\ban-da-mua-vang-ban-hang-de-nhat.jpg" />
+    <Content Include="Content\Images\product\BHCS.jpg" />
+    <Content Include="Content\Images\product\BQHDND.jpg" />
+    <Content Include="Content\Images\product\BVVHDLV.jpg" />
+    <Content Include="Content\Images\product\CH.jpg" />
+    <Content Include="Content\Images\product\CHM.jpg" />
+    <Content Include="Content\Images\product\CNCDT.jpg" />
+    <Content Include="Content\Images\product\CNKTOVXM.jpg" />
+    <Content Include="Content\Images\product\CNKTĐT.jpg" />
+    <Content Include="Content\Images\product\CNQ.jpg" />
+    <Content Include="Content\Images\product\co-oi-em-quen-lam-bai-tap-roi.jpg" />
+    <Content Include="Content\Images\product\conan.jpg" />
+    <Content Include="Content\Images\product\CP.png" />
+    <Content Include="Content\Images\product\dieu-anh-can-duy-nhat-chi-la-em_1.jpg" />
+    <Content Include="Content\Images\product\Doremon.jpg" />
+    <Content Include="Content\Images\product\duoc-ton-trong.jpg" />
+    <Content Include="Content\Images\product\DVVTV.jpg" />
+    <Content Include="Content\Images\product\email-marketing-thau-hieu-de-toi-uu.png" />
+    <Content Include="Content\Images\product\EX.jpg" />
+    <Content Include="Content\Images\product\facebook-marketing-4-0.png" />
+    <Content Include="Content\Images\product\HCG.jpg" />
+    <Content Include="Content\Images\product\hieu-anh-nishiura-o-enoshima.jpg" />
+    <Content Include="Content\Images\product\KANDLTH.jpg" />
+    <Content Include="Content\Images\product\KHCD.jpg" />
+    <Content Include="Content\Images\product\KTD.jpg" />
+    <Content Include="Content\Images\product\len-tam.jpg" />
+    <Content Include="Content\Images\product\LH.jpg" />
+    <Content Include="Content\Images\product\LHGD.jpg" />
+    <Content Include="Content\Images\product\LRSCMT.jpg" />
+    <Content Include="Content\Images\product\LTC.jpg" />
+    <Content Include="Content\Images\product\mai-truong-xua-tai-ban-2018.jpg" />
+    <Content Include="Content\Images\product\MTTDS.jpg" />
+    <Content Include="Content\Images\product\NGK.jpg" />
+    <Content Include="Content\Images\product\ngung-vien-co.png" />
+    <Content Include="Content\Images\product\nguoi-di-vao-hang-soi.jpg" />
+    <Content Include="Content\Images\product\nguyen-tac-thiet-ke-slide-chuan-ted.jpg" />
+    <Content Include="Content\Images\product\NNT.jpg" />
+    <Content Include="Content\Images\product\NTCTT.jpg" />
+    <Content Include="Content\Images\product\PHP.jpg" />
+    <Content Include="Content\Images\product\QGKN.jpg" />
+    <Content Include="Content\Images\product\QLTG.jpg" />
+    <Content Include="Content\Images\product\qua-khoi-doc-la-nha.jpg" />
+    <Content Include="Content\Images\product\ranh-con-ten-ly.jpg" />
+    <Content Include="Content\Images\product\sai-gon-khau-lai-manh-thoi-gian.jpg" />
+    <Content Include="Content\Images\product\TACNCNTT.jpg" />
+    <Content Include="Content\Images\product\tao-dung-thuong-hieu-ca-nhan.jpg" />
+    <Content Include="Content\Images\product\TDTCTDCS.jpg" />
+    <Content Include="Content\Images\product\TGDL.jpg" />
+    <Content Include="Content\Images\product\thau-hieu-khach-hang-ban-hang-hieu-qua.jpg" />
+    <Content Include="Content\Images\product\TheGioiPhang.jpg" />
+    <Content Include="Content\Images\product\THKNS.jpg" />
+    <Content Include="Content\Images\product\TKW.jpg" />
+    <Content Include="Content\Images\product\TLBB.jpg" />
+    <Content Include="Content\Images\product\TLHVDS.jpg" />
+    <Content Include="Content\Images\product\TLMCL.jpg" />
+    <Content Include="Content\Images\product\TLMHKD.jpg" />
+    <Content Include="Content\Images\product\TMBNN.jpg" />
+    <Content Include="Content\Images\product\TQ.jpg" />
+    <Content Include="Content\Images\product\TSKH.jpg" />
+    <Content Include="Content\Images\product\TT.jpg" />
+    <Content Include="Content\Images\product\TTHVTCX.png" />
+    <Content Include="Content\Images\product\TĐH.jpg" />
+    <Content Include="Content\Images\product\VLCM.jpg" />
+    <Content Include="Content\Images\product\XBLLVD.jpg" />
+    <Content Include="Content\Images\product\YTDLK.jpg" />
+    <Content Include="Content\Images\sai-gon-khau-lai-manh-thoi-gian.jpg" />
+    <Content Include="Content\Images\slide1.jpg" />
+    <Content Include="Content\Images\slide2.jpg" />
+    <Content Include="Content\Images\slide3.jpg" />
+    <Content Include="Content\Images\slide4.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\QLBS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBS.edmx</DependentUpon>
+      <LastGenOutput>QLBS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QLBS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBS.edmx</DependentUpon>
+      <LastGenOutput>QLBS.cs</LastGenOutput>
+    </Content>
+    <Content Include="obj\Debug\OnlineBooks.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\OnlineBooks.dll" />
+    <Content Include="obj\Debug\OnlineBooks.pdb" />
+    <Content Include="obj\Debug\TempPE\Models.QuanLyBanSach.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.QuanLyBanSach.Designer.cs.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\about_EntityFramework.help.txt" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\migrate.exe" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\QuanLyBanSach.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\QuanLyBanSach.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\QuanLyBanSach.ssdl" />
+    <Content Include="obj\Debug\OnlineBooks.csprojResolveAssemblyReference.cache" />
+    <EntityDeploy Include="Models\QLBS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLBS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\QLBS.edmx.diagram">
+      <DependentUpon>QLBS.edmx</DependentUpon>
+    </Content>
+    <None Include="packages\jQuery.1.8.0\Content\Scripts\jquery-1.8.0-vsdoc.js" />
+    <Content Include="packages\jQuery.1.8.0\Content\Scripts\jquery-1.8.0.js" />
+    <Content Include="packages\jQuery.1.8.0\Content\Scripts\jquery-1.8.0.min.js" />
+    <None Include="packages\jQuery.1.8.0\Tools\jquery-1.8.0.intellisense.js" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\dotnet5.4\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\dotnet5.4\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\net40\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\net40\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\net46\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\lib\net46\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net40\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net40\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net40\Microsoft.AI.DependencyCollector.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.22.9-build00167\content\scripts\ai.0.22.9-build00167.js" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.22.9-build00167\content\scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.22.9-build00167\tools\prefix.html" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net40\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net40\Microsoft.AI.Web.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net40\Microsoft.AI.Web.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net40\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net40\Microsoft.AI.WindowsServer.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net40\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net40\Microsoft.AI.ServerTelemetryChannel.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.XML" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.xml" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\Content\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\Content\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\csc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\vbc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="bin\OnlineBooks.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="packages\EntityFramework.5.0.0\.signature.p7s" />
+    <Content Include="packages\EntityFramework.5.0.0\Content\App.config.transform" />
+    <Content Include="packages\EntityFramework.5.0.0\Content\Web.config.transform" />
+    <Content Include="packages\EntityFramework.5.0.0\EntityFramework.5.0.0.nupkg" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.PS3.psd1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.psd1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\EntityFramework.psm1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\init.ps1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\install.ps1" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\Redirect.config" />
+    <Content Include="packages\EntityFramework.5.0.0\tools\Redirect.VS11.config" />
+    <Content Include="packages\jQuery.1.8.0\.signature.p7s" />
+    <Content Include="packages\jQuery.1.8.0\jQuery.1.8.0.nupkg" />
+    <Content Include="packages\jQuery.1.8.0\Tools\common.ps1" />
+    <Content Include="packages\jQuery.1.8.0\Tools\install.ps1" />
+    <Content Include="packages\jQuery.1.8.0\Tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.2.0.0\Microsoft.ApplicationInsights.2.0.0.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\content\ApplicationInsights.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\content\ApplicationInsights.config.transform" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\content\ApplicationInsights.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\Microsoft.ApplicationInsights.DependencyCollector.2.0.0.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.22.9-build00167\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.22.9-build00167\Microsoft.ApplicationInsights.JavaScript.0.22.9-build00167.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\content\ApplicationInsights.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\content\ApplicationInsights.config.transform" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\content\ApplicationInsights.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net40\ApplicationInsights.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net40\ApplicationInsights.config.transform" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net40\ApplicationInsights.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net40\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net40\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net45\ApplicationInsights.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net45\ApplicationInsights.config.transform" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net45\ApplicationInsights.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net45\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\content\net45\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.2.0.0\Microsoft.ApplicationInsights.Web.2.0.0.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\content\ApplicationInsights.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\content\ApplicationInsights.config.transform" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\content\ApplicationInsights.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\Microsoft.ApplicationInsights.WindowsServer.2.0.0.nupkg" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\Tools\install.ps1" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\content\ApplicationInsights.config.install.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\content\ApplicationInsights.config.transform" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\content\ApplicationInsights.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.3\Content\Web.config.install.xdt" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.3\Content\Web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.3\Microsoft.AspNet.Mvc.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.3\Microsoft.AspNet.Razor.3.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\Content\Web.config.install.xdt" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\Content\Web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.3\Microsoft.AspNet.WebPages.3.2.3.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\content\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\content\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\tools\init.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\.signature.p7s" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6.nupkg" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\Microsoft.Net.Compilers.1.0.0.nupkg" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\ThirdPartyNotices.rtf" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <None Include="scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="scripts\JavaScriptCustom.js" />
+    <Content Include="scripts\jquery-1.8.0.js" />
+    <Content Include="scripts\jquery-1.8.0.min.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="scripts\DKDNjs.js" />
+    <Content Include="scripts\jsGiohang.js" />
+    <Content Include="scripts\SlideJS.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\DKDNController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
+    <Compile Include="Controllers\PartialViewController.cs" />
+    <Compile Include="Controllers\TrangChuController.cs" />
+    <Compile Include="Controllers\ViewSachController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Admin.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietDonHang.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChuDe.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DanhGia.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DonHang.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KhachHang.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhaXuatBan.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLBS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLBS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sach.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SanPhamGH.cs" />
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TacGia.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThamGia.cs">
+      <DependentUpon>QLBS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_LayoutTrangChu.cshtml" />
+    <Content Include="Views\TrangChu\ViewTrangChu.cshtml" />
+    <Content Include="Views\PartialView\TopicPartial.cshtml" />
+    <Content Include="Views\PartialView\PublishPartialRespon.cshtml" />
+    <Content Include="Views\ViewSach\SachTheoChuDe.cshtml" />
+    <Content Include="Views\ViewSach\ChiTietSach.cshtml" />
+    <Content Include="Views\Giohang\GioHang.cshtml" />
+    <Content Include="Views\DKDN\DangKy.cshtml" />
+    <Content Include="Views\DKDN\DangNhap.cshtml" />
+    <Content Include="Views\DKDN\ThongTinCaNhan.cshtml" />
+    <Content Include="Views\_LayoutTrangAd.cshtml" />
+    <Content Include="Views\Admin\TrangChuAd.cshtml" />
+    <Content Include="Views\Admin\SachAD.cshtml" />
+    <Content Include="Views\Admin\ThemSach.cshtml" />
+    <Content Include="Views\Admin\DangNhapAD.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57810</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57810/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/_LayoutTrangChu.cshtml";
+}
+<h1>Đăng Nhập</h1>
+<div id="frm-DangNhap">
+    <div class="DN-Right">
+        <h2>Bạn Đã Có Tài Khoản? Đăng Nhập Tại Đây!</h2>
+        <form action="/DKDN/DangNhap" method="post">
+            <div class="DN-Content">
+                <p>Tài Khoản:</p>
+                <input type="text" id="TaiKhoan" name="TaiKhoan" />
+                <p>Mật Khẩu:</p>
+                <input type="password" id="MK" name="MK" />
+                <br />
+                <p id="DN-ThongBao">@Session["ThongBao"]</p>
+                <input type="submit" id="sub-DN" value="Đăng Nhập" />
+            </div>
+        </form>
+    </div>
+    <div class="DN-Left">
+        <h2>Bạn Chưa Có Tài Khoản?</h2>
+        <p>Bằng cách tạo một tài khoản, bạn sẽ có thể mua sắm nhanh hơn, được cập 
+        nhật về trạng thái của đơn đặt hàng và theo dõi các đơn đặt hàng bạn đã 
+        thực hiện trước đây.</p>
+        <a href="#">Đăng ký</a>
+    </div>
+</div>

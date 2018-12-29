@@ -1,0 +1,46 @@
+﻿@using OnlineBooks.Models;
+@model List<Sach>
+@{
+    ViewBag.Title = "SachAD";
+    Layout = "~/Views/_LayoutTrangAd.cshtml";
+}
+<div style="text-align: center;font-size: 18px; margin-bottom: 10px;"><a href="/Admin/ThemSach"><i class="fa fa-plus-square" aria-hidden="true"></i> Thêm Sách Mới</a></div>
+<div class="Ad-Content">
+    <table>
+        <thead>
+            <tr>
+                <td>Tên Sản Phẩm</td>
+                <td>Giá Bán</td>
+                <td>Mô Tả</td>
+                <td>Ảnh Bìa</td>
+                <td>Ngày Cập Nhật</td>
+                <td>Số Lượng Tồn</td>
+                <td>Mã Nhà Xuất Bản</td>
+                <td>Mã Chủ Đề</td>
+                <td>Chỉnh Sủa</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TenSach</td>
+                    <td>@item.GiaBan</td>
+                    <td width="400">@item.MoTa</td>
+                    <td><img src="~/Content/Images/product/@item.AnhBia" width="80" height="120" /></td>
+                    <td>@item.NgayCapNhat</td>
+                    <td>@item.SoLuongTon</td>
+                    <td>@item.MaNXB</td>
+                    <td>@item.MaChuDe</td>
+                    <td>
+                        
+                        <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

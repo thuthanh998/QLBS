@@ -1,0 +1,286 @@
+﻿.frm-content{
+    padding:10px;
+}
+.frm-Table{
+    width:100%;
+    margin-bottom: 20px;
+}
+.content > form > h2{
+    padding: 5px 5px 5px 20px;
+    background: #eee;
+    font-family: -webkit-pictograph;
+    font-weight: bold;
+}
+.frm-content  tbody  td:first-child{
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px;
+}
+.frm-content  tbody  td{
+ padding:4px;
+}
+.frm-content  tbody  td > input{
+    width: 300px;
+    height: 30px;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+#SL-GT{
+    background: #eee;
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 30px;
+}
+#btn-DangKy{
+    padding: 10px;
+    text-align: right;
+    border-top: 1px solid #ddd;
+}
+#btn-DangKy > input{
+    padding: 10px 15px;
+    background: #f89406;
+    border: 1px solid #f89406;
+    border-radius: 5px;
+    cursor:pointer;
+}
+#btn-DangKy > input:hover{
+    background:#F15A23
+}
+p#ThongBao{
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+.DN-Right{
+    float: left;
+    width: 45%;
+    margin-right: 25px;
+}
+.DN-Right > h2{
+    padding: 5px;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px
+}
+.DN-Right > form{
+    margin:15px;
+}
+.DN-Content{
+        font-size: 14px;
+    font-weight: bold;
+}
+.DN-Content > input{
+    padding: 5px;
+    background: #eee;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width:200px
+}
+#sub-DN{
+        padding: 10px;
+    background: #f89406;
+    border-radius: 5px;
+    width:100px;
+    cursor:pointer;
+}
+#sub-DN:hover{
+     background:#F15A23
+}
+.DN-Left{
+    float: left;
+    width: 50%;
+}
+.DN-Left > h2{
+        padding: 5px;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.DN-Left > p{
+    padding: 15px;
+    font-family: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.DN-Left > a{
+        padding: 10px 20px;
+    background: #f89406;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    color: #000;
+    margin: 15px;
+}
+.DN-Left > a:hover{
+    background:#F15A23
+}
+#DN-ThongBao{
+    color:red;
+}
+#TT-Left{
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+    background:#eee;
+}
+#TT-Left > div{
+        margin: 5px;
+}
+#TT-Left > div + div{
+    text-align: center;
+    border-top: 1px solid #bbb;
+    cursor:pointer;
+}
+#TT-Left > div + div > input{
+    text-align: center;
+    border-top: 1px solid #bbb;
+    cursor: pointer;
+    padding: 15px 45px;
+    border: 0;
+    background: #eee;
+    font-size: 15px;
+    outline: none;
+    font-weight: bold;
+}
+#TT-Left > div + div > input:hover{
+    background:#e3e3e3;
+}
+#TT-Left > div + div:hover{
+    background:#e3e3e3;
+}
+#TT-Left > div > span{
+    font-size: 120px
+}
+#TT-Left > div > div{
+    padding: 15px;
+    display:inline-block;
+
+}
+#TT-Left > div > div > p{
+        font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#TT-Left > div > div > p + p{
+        font-size: 14px;
+        font-family:'Times New Roman';
+}
+#TT-Right{
+        float: left;
+    width: 65%;
+    padding: 25px;
+    background: #eee;
+}
+#TT-Right tr{
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+}
+#TT-Right tr > td:first-child {
+    width:150px;
+    padding-bottom:25px;
+}
+#TT-Right tr > td {
+    padding-bottom:25px;
+}
+.btn-TT{
+        padding: 15px;
+    text-align: right;
+}
+.btn-TT > input{
+    padding: 7px;
+    background: #f89406;
+    border: 1px solid #f89406;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.btn-TT > input:hover{
+    background: #F15A23;
+   
+}
+/*TT-Right2*/
+#TT-Right2{
+        float: left;
+    width: 65%;
+    padding: 25px;
+    background: #eee;
+    display:none;
+}
+#TT-Right2 tr{
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+}
+#TT-Right2 tr > td:first-child {
+    width:150px;
+    padding-bottom:25px;
+}
+#TT-Right2 tr > td {
+    padding-bottom:25px;
+}
+#TT-Right2 td > input{
+    width: 300px;
+    height: 30px;
+    padding-left:10px;
+    border: 1px solid #ddd;
+}
+.btn-TT{
+        padding: 15px;
+    text-align: right;
+}
+#btn-LuuTT{
+    padding: 7px;
+    background: #f89406;
+    border: 1px solid #f89406;
+    cursor:pointer;
+    border-radius: 5px;
+}
+#btn-LuuTT:hover{
+    background: #F15A23;
+   
+}
+#GioiTinh{
+    padding: 5px;
+    background: #fff;
+}
+/*TT-Right3*/
+#TT-Right3{
+        float: left;
+    width: 65%;
+    padding: 25px;
+    background: #eee;
+    display:none;
+}
+#TT-Right3 tr{
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+}
+#TT-Right3 tr > td:first-child {
+    width:150px;
+    padding-bottom:25px;
+}
+#TT-Right3 tr > td {
+    padding-bottom:25px;
+}
+#TT-Right3 td > input{
+    width: 300px;
+    height: 30px;
+    padding-left:10px;
+    border: 1px solid #ddd;
+}
+.btn-TT{
+        padding: 15px;
+    text-align: right;
+}
+#btn-LuuTT2{
+    padding: 7px;
+    background: #f89406;
+    border: 1px solid #f89406;
+    cursor:pointer;
+    border-radius: 5px;
+}
+#btn-LuuTT2:hover{
+    background: #F15A23;
+   
+}
